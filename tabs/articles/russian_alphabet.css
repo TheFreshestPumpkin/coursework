@@ -30,16 +30,16 @@ section>p{
 
 .inline_img{
     float:right;
-    height: calc(var(--index)*15);
+    height: calc(var(--index_h)*15);
     margin-left: 10px;
 }
 
 .great_img{
     margin:15px;
     padding: 20px;
-    width:50%;
+    width:70%;
     position: relative;
-    left:20%;
+    left:10%;
     filter: grayscale(90%);
     border: thick solid black;
 }
