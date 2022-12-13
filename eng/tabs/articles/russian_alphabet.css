@@ -30,7 +30,7 @@ section>p{
 
 .inline_img{
     float:right;
-    height: calc(var(--index_h)*15);
+    height: calc(var(--index_h)*12);
     margin-left: 10px;
 }
 
@@ -39,7 +39,7 @@ section>p{
     padding: 20px;
     width:70%;
     position: relative;
-    left:10%;
+    left:5%;
     filter: grayscale(90%);
     border: thick solid black;
 }
