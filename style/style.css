@@ -141,7 +141,7 @@ body{
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
-    max-width:320px;
+    min-width:320px;
 }
 
 h2{
@@ -179,7 +179,7 @@ h2{
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
-    max-width:320px;
+    min-width:320px;
 }
 
 .vid>a>img{
