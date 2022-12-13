@@ -60,7 +60,7 @@ a{
     background-position: top;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    background-size: 90%;
+    background-size: cover;
     vertical-align: middle;
     text-align: center;
     font-size: 0;
