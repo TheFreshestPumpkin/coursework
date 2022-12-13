@@ -1,0 +1,55 @@
+@import url("../../style.css");
+
+section{
+    margin:25px 10%;
+    padding: 10px 10px;
+    box-shadow: 
+        0 15px 7px 7px #a3a3a3,
+        0 15px 7px 14px #b6b6b6,
+        0 15px 7px 21px #e1e1e1;
+}
+
+h1{
+    text-align: center;
+    font-size: calc(var(--index_h)*4);
+}
+
+h2{
+    font-size: calc(var(--index_h)*3)
+}
+
+span{
+    font-family: 'Coolvetica';
+    font-size:calc(var(--index_h)*1.5)
+}
+
+section>p{
+    font-size:calc(var(--index_h)*1.2);
+    font-family: 'Chiva';
+}
+
+.inline_img{
+    float:right;
+    height: calc(var(--index)*15);
+    margin-left: 10px;
+}
+
+.great_img{
+    margin:15px;
+    padding: 20px;
+    width:50%;
+    position: relative;
+    left:20%;
+    filter: grayscale(90%);
+    border: thick solid black;
+}
+
+.great_img:hover{
+    filter: grayscale(0);
+}
+
+header{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
