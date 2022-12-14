@@ -46,6 +46,12 @@ body{
         background-size: cover;
         background-position: center;
     }
+    .st{
+        min-width: none;
+    }
+    .vid{
+        min-width: none;
+    }
 }
 
 .title{
