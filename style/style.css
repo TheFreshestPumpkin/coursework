@@ -147,14 +147,14 @@ body{
 .st{
     flex-basis: auto;
     height: 40vh;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     margin:2% 3% 1% 20px;
     border-radius: 60px;
     border: thick solid;
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
-    min-width:320px;
+    min-width:310px;
 }
 
 h2{
@@ -192,7 +192,8 @@ h2{
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
-    min-width:320px;
+    min-width:310px;
+    padding: 0 30px 30px 30px;
 }
 
 .vid>a>img{
