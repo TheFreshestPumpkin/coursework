@@ -117,6 +117,7 @@ body{
 
 .text1{
     display:flex;
+    margin-left: 1vw;
     flex-wrap: wrap;
     align-items: center;
     font-family: 'Coolvetica';
@@ -153,7 +154,7 @@ body{
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
-    min-width: 320px;
+    max-width: 90%;
 }
 
 h2{
@@ -191,7 +192,7 @@ h2{
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
-    min-width: 320px;
+    max-width: 90%;
 }
 
 .vid>a>img{
@@ -215,6 +216,7 @@ h2{
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex:1 1 30%;
+    max-width: 90%;
 }
 
 .audio>a>img{
@@ -228,15 +230,20 @@ h2{
     transform: scale(1.2);
 }
 
-@media(max-width:400px){
+@media(max-width:420px){
     .menu>a{
         font-size: calc(var(--index_h)*1);
     }
+    .text1>span{
+        font-size: calc(var(--index_h)*1);
+    }
+    .info{
+        font-size: calc(var(--index_h)*1.5);
+    }
     .st,.audio,.vid{
         padding: 1%;
-        padding-bottom: 3%;
-        margin:1%;
-        margin-bottom: 3%;
+        margin:3%;
+        height: 45vh;
     }
     .st>a>img, .audio>a>img, .vid>a>img{
         height: 50%;
@@ -312,7 +319,7 @@ address>img{
     background-color: #fff;
     border: 1px solid #f8f8f8;
     position: absolute;
-    top: 2.5vh;
+    top: 4vh;
     right:calc(var(--index)*5);
     width: 125px;
     border-radius: 5px;
