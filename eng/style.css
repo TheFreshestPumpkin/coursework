@@ -228,6 +228,24 @@ h2{
     transform: scale(1.2);
 }
 
+@media(max-width:400px){
+    .menu>a{
+        font-size: calc(var(--index_h)*1);
+    }
+    .st,.audio,.vid{
+        padding: 1%;
+        padding-bottom: 3%;
+        margin:1%;
+        margin-bottom: 3%;
+    }
+    .st>a>img, .audio>a>img, .vid>a>img{
+        height: 50%;
+    }
+    .st>p,.audio>p,.vid>p{
+        text-align: center;
+    }
+}
+
 footer{
     background-color: black;
     margin:0;
