@@ -63,8 +63,8 @@ body{
 
 .title:hover{
     background-color: rgba(19, 19, 19);
-    color: rgba(255, 255, 255);
-    transition: background-color 0.5s;
+    transition: 0.4s;
+    color: rgba(255, 255, 255);    
 }
 
 
@@ -73,18 +73,23 @@ body{
     display:flex;
     flex-wrap: wrap;
     align-items: center; 
-    justify-content: space-between;   
+    justify-content: space-around;
+    padding: 25px 0px;   
 }
 
 .button>p{
     font-size: calc(var(--index)*2);
-    padding-right: 10px;
+    padding-right: 5px;
     color: rgb(255, 255, 255);
 }
 
+.logo{
+    width: 7vw;
+}
+
 .logo>a>img{
-    width:10vw;
-    height: 10vw;
+    width:100%;
+    height: 100%;
     filter:grayscale(90%);
 }
 
@@ -124,7 +129,7 @@ body{
 }
 
 .text1>img{
-    width: calc(var(--index)*9);
+    width: calc(var(--index)*7);
     transform: rotate(-20deg);
 }
 
@@ -141,13 +146,14 @@ body{
 .st{
     flex-basis: auto;
     height: 40vh;
-    padding: 0 30px 30px 30px;
+    padding: 30px;
     margin:2% 3% 1% 20px;
     border-radius: 60px;
     border: thick solid;
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
+    min-width: 320px;
 }
 
 h2{
@@ -165,7 +171,7 @@ h2{
 }
 
 .st>a>img{
-    height: 50%;
+    height: 57%;
     display:block;
     margin: 10px auto;
 }
@@ -178,13 +184,14 @@ h2{
 .vid{
     flex-basis: auto;
     height: 40vh;
-    padding: 0 30px 30px 30px;
+    padding: 30px;
     margin:2% 20px 1% 3%;
     border-radius: 60px;
     border: thick solid;
     border-color: black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 30%;
+    min-width: 320px;
 }
 
 .vid>a>img{
@@ -201,7 +208,7 @@ h2{
 .audio{
     flex-basis: auto;
     height: 40vh;
-    padding: 0 30px 30px 30px;
+    padding: 30px;
     margin:3% 20px;
     border-radius: 60px;
     border: thick solid;
@@ -233,6 +240,24 @@ address{
     justify-content: center;
     font-family: 'Coolvetica';
     font-size: calc(var(--index)*3);
+}
+
+@media(max-width:400px){
+    .menu>a{
+        font-size: calc(var(--index_h)*1);
+    }
+    .st,.audio,.vid{
+        padding: 1%;
+        padding-bottom: 3%;
+        margin:1%;
+        margin-bottom: 3%;
+    }
+    .st>a>img, .audio>a>img, .vid>a>img{
+        height: 50%;
+    }
+    .st>p,.audio>p,.vid>p{
+        text-align: center;
+    }
 }
 
 address>img{
@@ -287,7 +312,7 @@ address>img{
     background-color: #fff;
     border: 1px solid #f8f8f8;
     position: absolute;
-    top: 2.4vh;
+    top: 2.5vh;
     right:calc(var(--index)*5);
     width: 125px;
     border-radius: 5px;
@@ -304,15 +329,17 @@ address>img{
 
 .lang-menu ul li a {
     text-decoration: none;
-    font-size: calc(var(--index)*2);
     color:black;
     width: calc(var(--index)*10);
     padding: 5px 10px;
     display: block;
+    font-size: calc(var(--index)*2);
+    
 }
 
 .lang-menu ul li:hover {
     background-color: #f2f2f2;
+    padding:5px 0;
 }
 
 .lang-menu:hover ul {

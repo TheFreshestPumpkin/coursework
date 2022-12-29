@@ -2,7 +2,7 @@
 
 section{
     margin:25px 10%;
-    padding: 10px 10px;
+    padding: 20px 20px;
     box-shadow: 
         0 15px 7px 7px #a3a3a3,
         0 15px 7px 14px #b6b6b6,
@@ -50,6 +50,7 @@ section>p{
 
 header{
     position: sticky;
-    z-index: 3;
+    transition: 0.4s;
+    z-index: 99;
     top: 0;
 }

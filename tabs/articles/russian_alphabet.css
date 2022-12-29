@@ -2,7 +2,7 @@
 
 section{
     margin:25px 10%;
-    padding: 10px 10px;
+    padding: 20px 20px;
     box-shadow: 
         0 15px 7px 7px #a3a3a3,
         0 15px 7px 14px #b6b6b6,
@@ -10,11 +10,13 @@ section{
 }
 
 h1{
+    font-family: 'Coolvetica';
     text-align: center;
     font-size: calc(var(--index_h)*4);
 }
 
 h2{
+    font-family: 'Coolvetica';
     font-size: calc(var(--index_h)*3)
 }
 
@@ -48,9 +50,11 @@ section>p{
     filter: grayscale(0);
 }
 
-header{
-    position: sticky;
-    z-index: 3;
+.site_navigation{
+    position:sticky;
+    transition: 0.4s;
+    width: 100%;
     top: 0;
+    z-index: 99;
 }
 
