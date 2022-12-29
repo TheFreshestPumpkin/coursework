@@ -242,6 +242,24 @@ address{
     font-size: calc(var(--index)*3);
 }
 
+@media(max-width:400px){
+    .menu>a{
+        font-size: calc(var(--index_h)*1);
+    }
+    .st,.audio,.vid{
+        padding: 1%;
+        padding-bottom: 3%;
+        margin:1%;
+        margin-bottom: 3%;
+    }
+    .st>a>img, .audio>a>img, .vid>a>img{
+        height: 50%;
+    }
+    .st>p,.audio>p,.vid>p{
+        text-align: center;
+    }
+}
+
 address>img{
     width: calc(var(--index)*9);
     transform: rotate(-20deg);
